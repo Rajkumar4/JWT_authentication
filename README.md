@@ -10,21 +10,20 @@
          requirement as application/json 
             user: <unique in db>
             password : string
-            
          response:
             Json message:<Text>
+            
     for login:
        url: localhost:3000/signup/ methos='POST'
            requirement as application/json 
             user: <unique in db>
             password : string
-            
         response:
             Json message:<text>
             Access_token:<Hashed token>
+            
     for verify:
-          url: localhost:3000/verify/?token=<hashed token> methos='GET'
-                
+          url: localhost:3000/verify/?token=<hashed token> methos='GET'      
           response:
              json message:<Text>
-    ```
+   
